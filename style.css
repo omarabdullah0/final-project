@@ -1,0 +1,271 @@
+body {
+    background-color: #faebd778;
+    font-family: specimen, sans-serif;
+}
+
+.contener {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 80%;
+    padding-left: 70px;
+}
+
+.contener div {
+    padding: 10px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.contener div img {
+    width: 290px;
+    border-radius: 8px;
+}
+
+.contener div h2 {
+    text-align: left;
+    font-family: specimen, sans-serif;
+    font-size: 20px;
+}
+
+.par-img {
+    color: #00000069;
+    text-align: left;
+    font-family: specimen, sans-serif;
+}
+
+.par-mony {
+    color: orangered;
+    text-align: left;
+    font-family: specimen, sans-serif;
+    font-weight: bold;
+}
+
+.add-to-cart {
+    cursor: pointer;
+    width: 120px;
+    height: 35px;
+    position: relative;
+    top: -142px;
+    background-color: white;
+    border-radius: 30px;
+    padding-bottom: 10px;
+    border: 1px black solid;
+}
+
+.contener .img-card {
+    width: 20px;
+
+}
+
+/* div .cake {
+    position: absolute;
+    top: 26px;
+    right: 68px;
+    background-color: white;
+    width: 367px;
+} */
+
+/* .cake {
+    background-color: white;
+    width: 90%; 
+    max-width: 367px; 
+    margin: 20px auto; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); 
+    padding: 20px; 
+    position: absolute;
+    top: 26px;
+    right: 68px;
+    background-color: white;
+    width: 367px;
+}
+
+@media (max-width: 768px) {
+    .cake {
+        margin: 10px; 
+        width: 95%; 
+    }
+} */
+
+.cake {
+    background-color: white;
+    width: 90%; 
+    max-width: 367px; 
+    margin: 20px auto; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); 
+    padding: 20px; 
+    position: absolute; 
+    top: 26px; 
+    right: 44px; 
+}
+
+@media (max-width: 768px) {
+    .cake {
+        position: relative; 
+        margin: 0 auto; 
+        bottom: 0;
+        width: 90%; 
+        max-width: none; 
+        padding: 20px; 
+        margin-top: 20px; 
+    }
+}
+
+
+
+/*  */
+
+.cake-top {
+    position: relative;
+    bottom: 305px;
+    right: 0px;
+    font-weight: bold;
+    color: orangered;
+}
+
+.cake-bottom {
+    position: relative;
+    bottom: 55px;
+    right: 7px;
+    font-weight: bold;
+    color: #00000069;
+}
+
+#confirm-order {
+    margin-top: 10px;
+    cursor: pointer;
+    width: 300px;
+    height: 35px;
+    background-color: orangered;
+    color: white;
+    border-radius: 30px;
+    padding-bottom: 10px;
+    border: none;
+}
+
+.total-price1 {
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+li {
+    padding-bottom: 10px;
+    font-weight: bold;
+    list-style-type: none;
+}
+
+.list-order {
+    width: 400px;
+    background-color: white;
+    text-align: center;
+    color: black;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+    position: fixed;
+    top: 50px;
+    left: 29%;
+    height: 400px;
+    z-index: 1;
+    display: none;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+.list-order button {
+    margin-top: 10px;
+    cursor: pointer;
+    width: 300px;
+    height: 35px;
+    background-color: orangered;
+    color: white;
+    border-radius: 30px;
+    padding-bottom: 10px;
+    border: none;
+    position: relative;
+    top: 133px;
+}
+
+.list-order h2 {
+    font-size: 30px;
+}
+
+.list-order p {
+    color: #00000069;
+}
+
+
+.list-order img {
+    position: relative;
+    top: 13px;
+    left: -155px;
+}
+
+
+
+
+/* ----------------------- */
+
+.order-summary {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    z-index: 1000;
+    width: 353px;
+    height: auto;
+    max-width: 600px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+}
+
+.order-summary ul {
+    list-style: none;
+    padding: 0;
+}
+
+.order-summary img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+.order-summary button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #dc3b11;
+    color: white;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    top: 15%;
+    left: 9%;
+    border-radius: 26px;
+    width: 80%;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+.order-summary ul {
+    background-color: #ffe4c440;
+    border-radius: 8px;
+    padding-left: 8px;
+    padding-top: 10px;
+}
